@@ -18,7 +18,7 @@ def test_using_test_data_object_get_location_data_check_place_name(country_code,
 
 def read_test_data_from_csv():
     test_data = []
-    with open('test_data/test_data_zip_codes.csv', newline='') as csvfile:
+    with open('test_data/test_data.csv', newline='') as csvfile:
         data = csv.reader(csvfile, delimiter=',')
         next(data)  # skip header row
         for row in data:
